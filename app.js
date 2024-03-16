@@ -1,3 +1,8 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+
+
 // const heading = React.createElement("h1", {id:"heading"}, "Hello World From React!");
 // here the object is used for providing attributes to a tag like their id ans so on
 // createElement - it creates javascript object
@@ -25,17 +30,28 @@ for nested ---
  */      
 
 
-const parent = React.createElement("div", {id:"parent"}, [
-    React.createElement("div", {id:"child1"}, [
-    React.createElement("h1", {}, "i am h1 tag"),
-    React.createElement("h2", {}, "i am h2 tag")
-    ]),
-    React.createElement("div", {id:"child2"}, [
-    React.createElement("h1", {}, "i am h1 tag"),
-    React.createElement("h2", {}, "i am h2 tag")
-    ])
-    ]);
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(parent);
+// const parent = React.createElement("div", {id:"parent"}, [
+//     React.createElement("div", {id:"child1"}, [
+//     React.createElement("h1", {}, "i am h1 tag"),
+//     React.createElement("h2", {}, "i am h2 tag")
+//     ]),
+//     React.createElement("div", {id:"child2"}, [
+//     React.createElement("h1", {}, "i am h1 tag"),
+//     React.createElement("h2", {}, "i am h2 tag")
+//     ])
+//     ]);
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// root.render(parent);
+
+// ----------------------------- episode 3-------------------------------------------------------------
+
+// react.createElement => object => then it render on dom and it gives HTML element.
+
+const heading = React.createElement("h1", {id:"heading"}, "Namaste-react");
+
+const root = ReactDOM.createRoot(document.getElementById("root"));  // with the help of this we can show react element on browser
+root.render(heading);
